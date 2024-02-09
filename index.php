@@ -13,6 +13,12 @@ $bs_title_class = 'text-center display-4';
 
 $languages = ['C', 'Java', 'Perl'];
 
+$myTextFirstLine = "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+squid.";
+
+$myTextSecondLine = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, nulla nemo esse
+accusantium dolorum iste accusamus?";
+
 /**
  * Votre code ici
 */
@@ -81,10 +87,7 @@ $languages = ['C', 'Java', 'Perl'];
                 <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
                     <div class="card-body">
                         <p>
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                            squid. <br>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, nulla nemo esse
-                            accusantium dolorum iste accusamus?
+                            <?php echo $myTextFirstLine.$myTextSecondLine ?>
                         </p>
                     </div>
                 </div>
