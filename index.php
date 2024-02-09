@@ -35,7 +35,7 @@ $languages = ['C', 'Java', 'Perl'];
 
 <body>
     <div class="container mt-5">
-        <h1 class="<?php // écrire la class bootstrap du titre ici  ?>"> Découverte des base du PHP</h1>
+        <h1 class="<?php echo $bs_title_class ?>"> Découverte des base du PHP</h1>
 
         <p class="text-justify" id="intro">
             <abbr title="PHP: Hypertext Preprocessor"><?php echo $language ?></abbr> est un acronyme récursif, qui signifie <?php echo $fullLengthName ?> : c'est un langage de <mark><?php echo $typeOfLanguage ?></mark> HTML,
