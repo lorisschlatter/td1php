@@ -1,23 +1,23 @@
 <?php
 // déclaration de variable
 
-$language = "PHP";
-$fullLengthName = "PHP:Hypertext Preprocessor";
-$typeOfLanguage = "script";
-$execLocation = "serveur";
+$language = 'PHP';
+$fullLengthName = 'PHP:Hypertext Preprocessor';
+$typeOfLanguage = 'script';
+$execLocation = 'serveur';
 
-$firstNumber = 5;
+$firstNumber = 12;
 $secondNumber = 10;
 
 $bs_title_class = 'text-center display-4';
 
 $languages = ['C', 'Java', 'Perl'];
 
-$myTextFirstLine = "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-squid.";
+$myTextFirstLine = 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+squid.';
 
-$myTextSecondLine = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, nulla nemo esse
-accusantium dolorum iste accusamus?";
+$myTextSecondLine = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, nulla nemo esse
+accusantium dolorum iste accusamus?';
 
 /**
  * Votre code ici
@@ -63,15 +63,15 @@ accusantium dolorum iste accusamus?";
 
                 <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
                     <div class="card-body">
-                        <p>Somme : 10 + 10 Résultat = <?php echo 10+10?></p>
+                        <p>Somme : <?php echo $firstNumber.'+'.$secondNumber ?> Résultat = <?php echo $firstNumber+$secondNumber?></p>
 
-                        <p>Produit : 10 * 10 Résultat = <?php echo 10*10?></p>
+                        <p>Produit : <?php echo $firstNumber.'x'.$secondNumber ?> Résultat = <?php echo $firstNumber*$secondNumber?></p>
 
-                        <p>Modulo : 10 % 10 Résultat = <?php echo 10%10?></p>
+                        <p>Modulo : <?php echo $firstNumber.'%'.$secondNumber ?> Résultat = <?php echo $firstNumber%$secondNumber?></p>
 
-                        <p>Différence : 10 - 10 Résultat = <?php echo 10-10?></p>
+                        <p>Différence : <?php echo $firstNumber.'-'.$secondNumber ?> Résultat = <?php echo $firstNumber-$secondNumber?></p>
 
-                        <p>Division : 10 / 10 Résultat = <?php echo 10/10?></p>
+                        <p>Division : <?php echo $firstNumber.'/'.$secondNumber ?> Résultat = <?php echo $firstNumber/$secondNumber?></p>
                     </div>
                 </div>
             </div>
@@ -87,7 +87,7 @@ accusantium dolorum iste accusamus?";
                 <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
                     <div class="card-body">
                         <p>
-                            <?php echo $myTextFirstLine.$myTextSecondLine ?>
+                            <?php echo $myTextFirstLine.' '.$myTextSecondLine ?>
                         </p>
                     </div>
                 </div>
@@ -107,24 +107,73 @@ accusantium dolorum iste accusamus?";
                         <p>
                             La variable un est supérieure à la variable deux :
                             <!-- écrire votre code dans le span -->
-                            <span class="bg-secondary p-2"> résultat </span></p>
+                            <span class="bg-primary text-light p-2">     
+                            <?php     
+                            if ($firstNumber>$secondNumber){
+                                echo 'Vrai';
+                            }
+                            else{
+                                echo 'Faux';
+                            }
+                            ?>
+                            </span>
+                        </p>
                         <p>La variable un est strictement supérieure à la variable deux :
                             <!-- écrire votre code dans le span -->
-                            <span class="bg-secondary p-2"> résultat </span>
+                            <span class="bg-primary text-light p-2"> 
+                            <?php   
+                            if ($firstNumber>$secondNumber){
+                                echo "Vrai";
+                            }else {
+                                echo "Faux";
+                            }                            
+                            ?>
+                            </span>
                         </p>
                         <p>La variable un est égale à la variable deux :
-                            <span class="bg-secondary p-2"> résultat </span>
+                            <span class="bg-primary text-light p-2">
+                            <?php    
+                            if ($firstNumber==$secondNumber){
+                                echo "Vrai";
+                            }else {
+                                echo "Faux";
+                            }     
+
+                            ?>
+                            </span>
                         </p>
                         <p>La variable un est strictement égale à la variable deux :
-                            <span class="bg-secondary p-2">
-                                résultat </span>
+                            <span class="bg-primary text-light p-2">
+                            <?php                            
+                            if ($firstNumber===$secondNumber){
+                                echo "Vrai";
+                            }else {
+                                echo "Faux";
+                            }
+                            ?>
+                            </span>
                         </p>
                         <p>La variable un est supérieure ou égale à la variable deux :
-                            <span class="bg-secondary p-2">
-                                résultat </span>
+                            <span class="bg-primary text-light p-2">
+                            <?php             
+                            if ($firstNumber>=$secondNumber){
+                                echo "Vrai";
+                            }else {
+                                echo "Faux";
+                            }                            
+                            ?>
+                            </span>
                         </p>
                         <p>La variable un est inférieure ou strictement égale à la variable deux :
-                            <span class="bg-secondary p-2"> résultat </span>
+                            <span class="bg-primary text-light p-2">
+                            <?php                
+                            if ($firstNumber<$secondNumber || $firstNumber===$secondNumber){
+                                echo "Vrai";
+                            }else {
+                                echo "Faux";
+                            }                            
+                            ?>
+                            </span>
                         </p>
                     </div>
                 </div>
