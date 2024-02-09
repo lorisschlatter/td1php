@@ -190,7 +190,11 @@ accusantium dolorum iste accusamus?';
                 <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
                     <div class="card-body">
                         <h4>Liste des langages dont la syntaxe du PHP est inspirée</h4>
-                        <?php echo 'PHP est inspiré des langages'.' '.implode(', ',$languages) ?>
+                        <ul>
+                            <li><?=$languages[0]?></li>
+                            <li><?=$languages[1]?></li>
+                            <li><?=$languages[2]?></li>
+                        </ul>
                     </div>
                 </div>
             </div>
