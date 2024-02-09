@@ -57,11 +57,15 @@ $languages = ['C', 'Java', 'Perl'];
 
                 <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
                     <div class="card-body">
-                        <p>Somme : 10 + 10</p>
-                        <p>Produit : 10 * 10</p>
-                        <p>Modulo : 10 % 10</p>
-                        <p>Différence : 10 - 10</p>
-                        <p>Division : 10 / 10</p>
+                        <p>Somme : 10 + 10 Résultat = <?php echo 10+10?></p>
+
+                        <p>Produit : 10 * 10 Résultat = <?php echo 10*10?></p>
+
+                        <p>Modulo : 10 % 10 Résultat = <?php echo 10%10?></p>
+
+                        <p>Différence : 10 - 10 Résultat = <?php echo 10-10?></p>
+
+                        <p>Division : 10 / 10 Résultat = <?php echo 10/10?></p>
                     </div>
                 </div>
             </div>
