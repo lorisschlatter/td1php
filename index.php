@@ -44,8 +44,8 @@ accusantium dolorum iste accusamus?';
         <h1 class="<?php echo $bs_title_class ?>"> Découverte des base du PHP</h1>
 
         <p class="text-justify" id="intro">
-            <abbr title="PHP: Hypertext Preprocessor"><?php echo $language ?></abbr> est un acronyme récursif, qui signifie <?php echo $fullLengthName ?> : c'est un langage de <mark><?php echo $typeOfLanguage ?></mark> HTML,
-            exécuté côté <mark><?php echo $execLocation ?></mark> . Sa syntaxe est empruntée aux langages C, Java et Perl , et
+            <abbr title="PHP: Hypertext Preprocessor"><?=$language ?></abbr> est un acronyme récursif, qui signifie <?=$fullLengthName ?> : c'est un langage de <mark><?=$typeOfLanguage ?></mark> HTML,
+            exécuté côté <mark><?=$execLocation ?></mark> . Sa syntaxe est empruntée aux langages C, Java et Perl , et
             est facile à apprendre. Le
             but de ce langage est de permettre aux développeurs web d'écrire des pages dynamiques rapidement, mais vous
             pouvez faire beaucoup plus avec PHP.
@@ -87,7 +87,7 @@ accusantium dolorum iste accusamus?';
                 <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
                     <div class="card-body">
                         <p>
-                            <?php echo $myTextFirstLine.' '.$myTextSecondLine ?>
+                            <?=$myTextFirstLine.'<br>'.$myTextSecondLine ?>
                         </p>
                     </div>
                 </div>
@@ -123,9 +123,9 @@ accusantium dolorum iste accusamus?';
                             <span class="bg-primary text-light p-2"> 
                             <?php   
                             if ($firstNumber>$secondNumber){
-                                echo "Vrai";
+                                echo 'Vrai';
                             }else {
-                                echo "Faux";
+                                echo 'Faux';
                             }                            
                             ?>
                             </span>
@@ -134,9 +134,9 @@ accusantium dolorum iste accusamus?';
                             <span class="bg-primary text-light p-2">
                             <?php    
                             if ($firstNumber==$secondNumber){
-                                echo "Vrai";
+                                echo 'Vrai';
                             }else {
-                                echo "Faux";
+                                echo 'Faux';
                             }     
 
                             ?>
@@ -146,9 +146,9 @@ accusantium dolorum iste accusamus?';
                             <span class="bg-primary text-light p-2">
                             <?php                            
                             if ($firstNumber===$secondNumber){
-                                echo "Vrai";
+                                echo 'Vrai';
                             }else {
-                                echo "Faux";
+                                echo 'Faux';
                             }
                             ?>
                             </span>
@@ -157,9 +157,9 @@ accusantium dolorum iste accusamus?';
                             <span class="bg-primary text-light p-2">
                             <?php             
                             if ($firstNumber>=$secondNumber){
-                                echo "Vrai";
+                                echo 'Vrai';
                             }else {
-                                echo "Faux";
+                                echo 'Faux';
                             }                            
                             ?>
                             </span>
@@ -168,9 +168,9 @@ accusantium dolorum iste accusamus?';
                             <span class="bg-primary text-light p-2">
                             <?php                
                             if ($firstNumber<$secondNumber || $firstNumber===$secondNumber){
-                                echo "Vrai";
+                                echo 'Vrai';
                             }else {
-                                echo "Faux";
+                                echo 'Faux';
                             }                            
                             ?>
                             </span>
